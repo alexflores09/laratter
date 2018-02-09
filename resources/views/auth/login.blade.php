@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="row">
+    <div class="row">
     <div class="col-md-8 offset-md-4 mt-2">
         <form method="POST" action="{{ route('login') }}">
             {{ csrf_field() }}
@@ -56,6 +56,7 @@
                 </div>
             </div>
         </form>
+        <a href="/auth/facebook" class="btn btn-primary">Login con Facebook</a>
     </div>
 </div>
 @endsection

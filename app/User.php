@@ -42,4 +42,8 @@ class User extends Authenticatable
     public function isFollowing($user){
 	    return $this->follows->contains($user);
     }
+
+    public function socialProfilex(){
+    	return $this->hasMany(SocialProfile::class);
+    }
 }
